@@ -1,5 +1,5 @@
 import React from "react";
-import Tag from "../Tag";
+import Tag from "../Tag/Tag.jsx";
 import deleteIcon from "../../assets/delete.png";
 
 import "./TaskCard.css";
@@ -15,7 +15,7 @@ const TaskCard = () => {
           <Tag tagName="CSS" />
         </div>
         <div className="taskDelete">
-          <img src={deleteIcon} alt="" />
+          <img src={deleteIcon} className="deleteIcon" alt="" />
         </div>
       </div>
     </article>

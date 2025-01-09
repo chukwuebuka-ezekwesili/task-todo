@@ -2,6 +2,7 @@ import React from "react";
 import Todo from "../../assets/direct-hit.png";
 
 import "./TaskColumn.css";
+import TaskCard from "../TaskCard/TaskCard";
 
 const TaskColumn = ({ title, icon }) => {
   //   console.log("props", props);
@@ -15,6 +16,8 @@ const TaskColumn = ({ title, icon }) => {
         <img className="taskColumnIcon" src={icon} alt="" />
         {title}
       </h2>
+
+      <TaskCard />
     </section>
     // <section className="taskColumn">Section 2</section>
     // <section className="taskColumn">Section 3</section>
